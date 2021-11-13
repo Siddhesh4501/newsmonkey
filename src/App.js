@@ -20,23 +20,23 @@ const App =()=> {
         <Switch>
 
 
-        <Route exact path="/">
+        <Route exact path="/newsmonkey">
         {/* <Route exact path={process.env.PUBLIC_URL + '/'}> */}
             <News key="general" pagesize={9} contenttype="general"/>
         </Route>
-        <Route exact path="/business">
+        <Route exact path="/newsmonkey/business">
             <News key="business" pagesize={9} contenttype="business"/>
         </Route>
-        <Route exact path="/entertainment">
+        <Route exact path="/newsmonkey/entertainment">
             <News key="entertainment" pagesize={9} contenttype="entertainment"/>
         </Route>
-        <Route exact path="/science">
+        <Route exact path="/newsmonkey/science">
             <News key="science" pagesize={9} contenttype="science"/>
         </Route>
-        <Route exact path="/sports">
+        <Route exact path="/newsmonkey/sports">
             <News key="sports" pagesize={9} contenttype="sports"/>
         </Route>
-        <Route exact path="/technology">
+        <Route exact path="/newsmonkey/technology">
             <News key="technology" pagesize={9} contenttype="technology"/>
         </Route>
 
