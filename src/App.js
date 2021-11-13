@@ -5,7 +5,7 @@ import Navbar from './component/Navbar';
 import News from './component/News';
 
 import {
-  HashRouter as Router,
+  BaseRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import {
 const App =()=> {
 
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
       <div>
         <Navbar/>
 
