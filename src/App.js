@@ -5,7 +5,7 @@ import Navbar from './component/Navbar';
 import News from './component/News';
 
 import {
-  BaseRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
