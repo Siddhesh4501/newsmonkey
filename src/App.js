@@ -5,7 +5,7 @@ import Navbar from './component/Navbar';
 import News from './component/News';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import {
 const App =()=> {
 
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar/>
 
@@ -21,6 +21,7 @@ const App =()=> {
 
 
         <Route exact path="/">
+        {/* <Route exact path={process.env.PUBLIC_URL + '/'}> */}
             <News key="general" pagesize={9} contenttype="general"/>
         </Route>
         <Route exact path="/business">
