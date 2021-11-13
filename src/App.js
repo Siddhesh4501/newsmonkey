@@ -20,7 +20,7 @@ const App =()=> {
         <Switch>
 
 
-        <Route exact path="/newsmonkey">
+        <Route exact path="/newsmonkey/">
         {/* <Route exact path={process.env.PUBLIC_URL + '/'}> */}
             <News key="general" pagesize={9} contenttype="general"/>
         </Route>
